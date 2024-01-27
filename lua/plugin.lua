@@ -89,6 +89,12 @@ local plugins = {
 			symbol_in_winbar = {enable = true}
 		end
 	},
+	{
+		"lvimuser/lsp-inlayhints.nvim",
+		config = function()
+			require("lsp-inlayhints").setup()
+		end
+	},
     "kosayoda/nvim-lightbulb",
     "RishabhRD/nvim-lsputils",
         "RishabhRD/popfix",
@@ -249,6 +255,18 @@ local plugins = {
         end 
     },
 	"rcarriga/nvim-notify",
+	{
+	  	"utilyre/barbecue.nvim",
+	  	name = "barbecue",
+	  	version = "*",
+	  	dependencies = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons", -- optional dependency
+	    },
+	  	opts = {
+			-- configurations go here
+		},
+	}
 }
 
 -- Lazy setup

@@ -8,13 +8,6 @@ require("which-key").register {
 	["<F4>"] = { ":Telescope undo <CR>", "Runfile" },
 }
 
-require("which-key").register {
-	["<F1>"] = { "<cmd> lua require('runfile').main() <CR>", "Runfile" },
-	["<F2>"] = { ":Telescope <CR>", "Runfile" },
-	["<F3>"] = { ":Telescope file_browser <CR>", "Runfile" },
-	["<F4>"] = { ":Telescope undo <CR>", "Runfile" },
-}
-
 -- FloatTerm (Doesn't work with whichkeys for some reason)
 vim.cmd[[
     nnoremap   <silent>   <F7>    :FloatermNew<CR>
@@ -33,7 +26,7 @@ inoremap <silent> <Esc> <C-\><C-n>:lua local popup = require("nui.popup")({ ente
 ]]
 
 -- Codium
-vim.keymap.set('i', '<c-k>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+vim.keymap.set('i', '<c-h>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
 vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
 vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
 vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })

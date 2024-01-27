@@ -1,6 +1,4 @@
 require("plugin")
-require("option")
-require("mappings")
 
 local custom_plugin_options = {
     plugins = {
@@ -11,7 +9,11 @@ local custom_plugin_options = {
         "cmp",
         "dap",
         "snips"
-    }
+    },
+	settings = {
+		"mappings",
+		"option"
+	}
 }
 
 for key, value in pairs(custom_plugin_options) do
