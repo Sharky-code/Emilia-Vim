@@ -8,6 +8,7 @@ local options = {
 	nocompatible,
 	swapfile = false,
 	number = true,
+	relativenumber = true, -- set to false for absolute line numbers
 	scrolloff = 5,
 	cursorline = true,
 	tabstop = 4,
