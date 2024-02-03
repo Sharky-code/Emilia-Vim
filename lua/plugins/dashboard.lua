@@ -1,4 +1,7 @@
-local dashboard = require("alpha.themes.dashboard")
+return {
+	'/goolord/alpha-nvim',
+	config = function()
+	local dashboard = require("alpha.themes.dashboard")
 
 dashboard.section.header.val = {
 	"=============================================================",
@@ -29,3 +32,5 @@ dashboard.section.buttons.val = {
 	dashboard.button( "q", "󰅚  Quit NVIM" , ":qa <CR>"),
 }
 dashboard.config.opts.noautocmd = true
+end
+}

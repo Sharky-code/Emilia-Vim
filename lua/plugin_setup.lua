@@ -16,9 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugin List
 local plugins = {
-	-- > Colorscheme #001021
+	-- > Tokyonight #001021
 	"folke/tokyonight.nvim",
-	
 	-- > Treesitter #001022
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -68,7 +67,6 @@ local plugins = {
 			}
 		end
 	},
-    "nvim-lua/plenary.nvim",
     {
 		"folke/neodev.nvim",
 		config = function()
@@ -270,4 +268,6 @@ local plugins = {
 }
 
 -- Lazy setup
-require("lazy").setup(plugins, {})  -- The latter parameter is `opts`
+-- require("lazy").setup(plugins, {})
+require("lazy").setup("plugins")  -- The latter parameter is `opts`
+
