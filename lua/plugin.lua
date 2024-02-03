@@ -68,7 +68,6 @@ local plugins = {
 			}
 		end
 	},
-    "nvim-lua/plenary.nvim",
     {
 		"folke/neodev.nvim",
 		config = function()
