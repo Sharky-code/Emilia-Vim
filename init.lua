@@ -13,6 +13,9 @@ local custom_plugin_options = {
 	settings = {
 		"mappings",
 		"option"
+	},
+	custom = {
+		"window-temp"
 	}
 }
 
