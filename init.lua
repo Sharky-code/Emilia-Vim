@@ -1,4 +1,4 @@
-require("plugin")
+require("plugin_setup")
 
 local custom_plugin_options = {
     plugins = {
@@ -24,3 +24,4 @@ end
 
 vim.cmd("TransparentDisable")
 vim.cmd("color tokyonight")
+

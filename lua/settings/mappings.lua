@@ -6,6 +6,8 @@ require("which-key").register {
 	["<F2>"] = { ":Telescope <CR>", "Runfile" },
 	["<F3>"] = { ":Telescope file_browser <CR>", "Runfile" },
 	["<F4>"] = { ":Telescope undo <CR>", "Runfile" },
+	["<F5>"] = { ":Telescope find_files<CR>", ""},
+	["<F6>"] = { ":Telescope live_grep<CR>", ""},
 }
 
 -- FloatTerm (Doesn't work with whichkeys for some reason)
