@@ -270,4 +270,3 @@ local plugins = {
 -- Lazy setup
 -- require("lazy").setup(plugins, {})
 require("lazy").setup("plugins")  -- The latter parameter is `opts`
-
