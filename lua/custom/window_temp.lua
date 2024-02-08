@@ -2,8 +2,9 @@ local Split = require("nui.split")
 
 local split = Split({
   relative = "editor",
-  position = "left",
+  position = "bottom",
   size = "20%",
+  enter = false
 })
 
-split:mount()
+return split
