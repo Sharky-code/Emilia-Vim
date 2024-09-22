@@ -8,5 +8,5 @@ require "ui.winbar"
 require "lsp.lsp_server"
 require "lsp.lsp_settings"
 
-vim.cmd [[ colorscheme tokyonight ]]
-vim.cmd [[ TransparentEnable ]]
+vim.cmd [[ colorscheme oxocarbon ]]
+vim.cmd [[ TransparentDisable ]]

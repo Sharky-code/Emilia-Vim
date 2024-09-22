@@ -172,7 +172,7 @@ local opts = {
 	showcmd = false,
 
 	-- When a bracket is inserted, briefly jump to the previous one
-	showmatch = true,
+	showmatch = false,
 
 	-- Disable showing what mode it is (as I will display it myself)
 	showmode = false,
