@@ -1,8 +1,4 @@
 return {
-	{
-	  "folke/tokyonight.nvim",
-	  lazy = true,
-	  priority = 1000,
-	  opts = {},
-	}
+	"folke/tokyonight.nvim",
+	"nyoom-engineering/oxocarbon.nvim"
 }
