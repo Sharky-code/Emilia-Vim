@@ -1,7 +1,11 @@
 return {
 	{
 		"neovim/nvim-lspconfig",
+		config = function()
+			require("neoconf").setup{}
+		end
 	},
+
 	-- Mason
 	{
 		"williamboman/mason.nvim",
@@ -30,7 +34,6 @@ return {
 			end
 		end
 	},
-	-- Luasnip
 	{
 		"L3MON4D3/LuaSnip"
 	},
