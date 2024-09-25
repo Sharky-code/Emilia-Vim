@@ -1,10 +1,12 @@
 local M = {}
 
 local status, navic = pcall(require, "nvim-navic")
+local augroup = vim.api.nvim_create_augroup("Winbar", { clear = true })
 
 if not status then
 	return 0
 end
+
 
 M.update_winbar = function ()
 	local opts = {
@@ -17,7 +19,20 @@ M.update_winbar = function ()
 	opts.space .. navic.get_location()
 end
 
--- On startup
+M.main = function ()
+	print("Hello! Winbar")
+end
+
+
+M.setup = function ()
 M.update_winbar()
+	vim.api.nvim_create_autocmd("CursorMoved", {
+		group = augroup,
+		callback = function ()
+			M.update_winbar()
+		end,
+		callback = M.main
+	})
+end
 
 return M
